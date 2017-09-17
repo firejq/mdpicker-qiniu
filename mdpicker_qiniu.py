@@ -52,13 +52,16 @@ class ClipToQiniu(object):
 
     @staticmethod
     def generate_remote_name(file_path):
-        img_name, img_ext = os.path.splitext(os.path.basename(file_path))
+        # 获取文件扩展名
+        img_ext = file_path.split('.')[-1]
+        # 计算文件 md5 值
         with open(file_path, 'rb') as fh:
             md5 = hashlib.md5(fh.read()).hexdigest()
-        # remote url: filetype/year/month/day/md5.filetype
+
+        # remote name: filetype/year/month/day/md5.filetype
         now = datetime.datetime.now()
-        remote_name = img_ext[1:] + '/' + str(now.year) + '/' + str(
-            now.month) + '/' + str(now.day) + '/' + md5 + img_ext
+        remote_name = img_ext + '/' + str(now.year) + '/' + str(
+            now.month) + '/' + str(now.day) + '/' + md5 + '.' + img_ext
         return remote_name
 
     @staticmethod
@@ -82,5 +85,5 @@ class ClipToQiniu(object):
 if __name__ == '__main__':
     clip_to_qiniu = ClipToQiniu()
     clip_to_qiniu.save_from_screen()
-    clip_to_qiniu.operate("tmp.jpg")
+    clip_to_qiniu.operate('tmp.jpg')
     clip_to_qiniu.close()
