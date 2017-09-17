@@ -10,7 +10,7 @@
 
 - 效果演示
 
-![img](http://otaivnlxc.bkt.clouddn.com/mdpicker-qiniu-presentation.gif)
+![img](https://github.com/firejq/mdpicker-qiniu/blob/master/static/mdpicker-qiniu-presentation.gif)
 
 ## Requirement ##
 - Python 3.6
