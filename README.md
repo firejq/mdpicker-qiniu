@@ -37,8 +37,8 @@ pip install -r requirement.txt
 
 
 ## Similar Project ##
-https://github.com/ferstar/qiniu4blog
-https://github.com/jiwenxing/qiniu-image-tool-win
+- https://github.com/ferstar/qiniu4blog
+- https://github.com/jiwenxing/qiniu-image-tool-win
 
 
 ## License ##
