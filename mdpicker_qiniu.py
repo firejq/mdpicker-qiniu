@@ -27,7 +27,7 @@ class ClipToQiniu(object):
         self.__default_domain = 'http://' + \
             config.get('config', 'defaultDomain') + '/'
 
-    def go(self, file_path):
+    def operate(self, file_path):
         """
         将临时图片文件上传到qiniu，并将外链复制到剪贴板
         :param file_path:
@@ -82,5 +82,5 @@ class ClipToQiniu(object):
 if __name__ == '__main__':
     clip_to_qiniu = ClipToQiniu()
     clip_to_qiniu.save_from_screen()
-    clip_to_qiniu.go("tmp.jpg")
+    clip_to_qiniu.operate("tmp.jpg")
     clip_to_qiniu.close()
