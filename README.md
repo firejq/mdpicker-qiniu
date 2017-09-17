@@ -36,6 +36,9 @@ pip install -r requirement.txt
 3. 使用任意截图工具截图后，按下 Ctrl + shift + v，程序将剪贴板中的截图上传至七牛图床并将所得外链以 markdown 图片格式重组后输出到屏幕。
 
 
+## Similar Project ##
+https://github.com/ferstar/qiniu4blog
+https://github.com/jiwenxing/qiniu-image-tool-win
 
 
 ## License ##
