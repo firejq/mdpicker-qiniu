@@ -71,6 +71,9 @@ class ClipToQiniu(object):
         :return:
         """
         pic = ImageGrab.grabclipboard()
+        if pic is None:
+        	print("No image is on the clipboard.")
+        	return
         pic.save("tmp.jpg")
 
     @staticmethod
