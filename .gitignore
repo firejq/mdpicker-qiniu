@@ -1,1 +1,4 @@
 .qiniu_pythonsdk_hostscache.json
+.idea/
+.git/
+.gitignore
