@@ -1,6 +1,6 @@
-# Markdown Picker To Qiniu #
+# Markdown Picker To Qiniu
 
-## Feature ##
+## Feature
 
 - 使用 python + ahk 简化使用 markdown 写作时插入图片的繁琐流程
 
@@ -12,8 +12,12 @@
 
 ![img](https://github.com/firejq/mdpicker-qiniu/blob/master/static/mdpicker-qiniu-presentation.gif)
 
-## Requirement ##
-- Python 3.6
+- 自动为截图添加阴影
+
+    在 qiniu.ini 中，保持默认配置 `shadow = 1` 即可自动对截图进行阴影处理，显示时效果更加友好。若不需要进行阴影处理，更改默认配置 `shadow = 0` 即可。
+
+## Requirement
+
 ```powershell
 pip install -r requirement.txt
 ```
@@ -21,25 +25,23 @@ pip install -r requirement.txt
 
 其它环境未测试
 
-## Usage ##
+## Usage
 
 1. 在 qiniu.ini 中，填写你的七牛账号信息：bucket、accessKey、secretKey、defaultDomain；
 
 1. 若未安装 AutoHotKey，则安装 [AutoHotKey](https://www.autohotkey.com/download/ahk-install.exe)；
 
-2. 将 mdpicker_qiniu.ahk 中的 mdpicker_qiniu.py 路径更改为你本地 mdpicker_qiniu.py 的绝对路径后保存；
+1. 将 mdpicker_qiniu.ahk 中的 mdpicker_qiniu.py 路径更改为你本地 mdpicker_qiniu.py 的绝对路径后保存；
 
-2. 运行 mdpicker_qiniu.ahk；
+1. 运行 mdpicker_qiniu.ahk；
    
     若已有 .ahk 脚本在运行，则将 mdpicker_qiniu.ahk 中的内容添加到你的 .ahk 脚本中，reload 即可；
 
-3. 使用任意截图工具截图后，按下 Ctrl + shift + v，程序将剪贴板中的截图上传至七牛图床并将所得外链以 markdown 图片格式重组后输出到屏幕。
+1. 使用任意截图工具截图后，按下 Ctrl + shift + v，程序将剪贴板中的截图上传至七牛图床并将所得外链以 markdown 图片格式重组后输出到屏幕。
 
-
-## Similar Project ##
+## Similar Project
 - https://github.com/ferstar/qiniu4blog
 - https://github.com/jiwenxing/qiniu-image-tool-win
 
-
-## License ##
+## License
 The Markdown Picker To Qiniu is under the MIT License.
