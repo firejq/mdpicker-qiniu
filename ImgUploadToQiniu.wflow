@@ -1,0 +1,13 @@
+on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	do shell script "cd /Users/YOUR_PATH/mdpicker-qiniu;/usr/local/bin/pipenv run python mdpicker_qiniu.py"
+	(* tell application "System Events" to keystroke "v" using command down *)
+	
+	set titleStr to "Qiuniu uploaded successfully!"
+	set btns to {"ok"}
+	display dialog titleStr buttons btns default button 1
+	
+	return input
+end run
