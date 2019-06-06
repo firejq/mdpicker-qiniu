@@ -43,9 +43,9 @@ pip install -r requirement.txt
 
     1. 在 qiniu.ini 中，填写你的七牛账号信息：bucket、accessKey、secretKey、defaultDomain；
     
-    1. 通过 Automator 添加 Workflow，将 ImgUploadToQiniu.wflow 中的 AppleScript （需要更改项目路径为你自己的路径）添加到 Workflow 中，再设置快捷键（此处设置为 command + shift + v）即可。
+    1. 通过 Automator 添加 Workflow，将 ImgUploadToQiniu.wflow 中的 AppleScript （需要更改项目路径为你自己的路径）添加到 Workflow 中，再设置快捷键（此处设置为 command + alt + v）即可。
     
-    1. 使用任意截图工具截图后，按下 command + shift + v，程序将剪贴板中的截图上传至七牛图床并将所得外链以 markdown 图片格式重组后输出到剪贴板，得到操作完成的提示后 command + v 输出剪贴板内容即可。
+    1. 使用任意截图工具截图后，按下 command + alt + v，程序将剪贴板中的截图上传至七牛图床并将所得外链以 markdown 图片格式重组后输出到剪贴板，得到操作完成的提示后 command + v 输出剪贴板内容即可。
 
 ## Similar Project
 - https://github.com/ferstar/qiniu4blog
